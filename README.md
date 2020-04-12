@@ -8,8 +8,8 @@ Scriptorium is an **online library information system** which allows easy access
 
 
 ## Overview
-The following is a glimpse of the Application (HomePage on top and the Recommendation page below)
-![The Home Page](/images/homepage.jpg)
+The following is a glimpse of the Recommendation page in the Application.
+
 ![The Recommendations Page](/images/reccs.png)
 
 
