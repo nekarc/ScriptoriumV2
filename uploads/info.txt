@@ -1,0 +1,1 @@
+This (./uploads) is a temporary folder to hold the image file, while uploading to firebase.
