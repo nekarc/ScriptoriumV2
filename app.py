@@ -37,13 +37,13 @@ CORS(app)
 
 # firebase-config
 config = {
-    "apiKey": "AIzaSyB9Y5UniIuOWHBj2TEM_o86oWcWoEIfNxE",
-    "authDomain": "scriptorium-v3.firebaseapp.com",
-    "databaseURL": "https://scriptorium-v3.firebaseio.com",
-    "projectId": "scriptorium-v3",
-    "storageBucket": "scriptorium-v3.appspot.com",
-    "messagingSenderId": "780846580846",
-    "appId": "1:780846580846:web:448cdaffadc201990d527f",
+    "apiKey": ,
+    "authDomain": ,
+    "databaseURL": ,
+    "projectId": ,
+    "storageBucket": ,
+    "messagingSenderId": ,
+    "appId": ,
     "serviceAccount": "./keyfile.json"
 }
 
