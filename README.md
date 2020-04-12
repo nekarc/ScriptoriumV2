@@ -8,7 +8,12 @@ Scriptorium is an **online library information system** which allows easy access
 
 
 ## Overview
-A schematic diagram portraying the flow of data across the system
+The following is a glimpse of the Application (HomePage on top and the Recommendation page below)
+![The Home Page](/images/homepage.jpg)
+![The Recommendations Page](/images/reccs.png)
+
+
+A schematic diagram portraying the flow of data across the system. If the Diagram is not rendered and looks like plain text/code, then please enable the [Github + Mermaid](https://chrome.google.com/webstore/detail/github-%2B-mermaid/goiiopgdnkogdbjmncgedmgpoajilohe) extension for Chrome.
 ```mermaid
 sequenceDiagram
 Angular ->> Flask: Cross Domain API call
@@ -47,16 +52,17 @@ $ pipenv shell
 $ pip install flask flask-cors flask-mysqldb pyrebase4
 ```
 
-4. Create a firebase storage and update the firebase cofiguration in the [app.py](https://github.com/AryaRajivChaloli/lis-scriptorium/blob/master/app.py) file using your credentials. Following which, add the private key to the firebase project in the [keyfile.json]((https://github.com/AryaRajivChaloli/lis-scriptorium/blob/master/keyfile.json)) file.
+4. Create a firebase storage and update the firebase configuration in the `app.py` file using your credentials. Following which, add the private key to the firebase project in the `keyfile.json` file.
 
 5. Start the MySQL server. Create a database with 4 tables: users, books, borrow, and history with the requisite fields in each one of them.
 
-6. run the flask server (on port 5000 by default)
+6. Run the flask server (on port 5000 by default)
 ```bash
 $ flask run
 ```
-7. run the angular server (on port 4200 by default)
+7. Run the angular server (on port 4200 by default)
 ```bash
+$ cd scriptorium
 $ ng serve
 ```
 
