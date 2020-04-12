@@ -1,0 +1,39 @@
+<section class="pb_section" data-section="contact" id="section-contact">
+  <div class="container">
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="mt-0 heading-border-top font-weight-normal">The Entrance</h2>
+        <p>Your way in!</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
+
+        <form *ngIf="!busy" (ngSubmit)="logIn(postForm.value)" [formGroup]="postForm">
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group formcontrol">
+                <label for="uid">Id</label>
+                <input type="text" formControlName="uid" class="form-control p-3 rounded-0" id="uid">
+              </div>
+              <div class="form-group formcontrol">
+                <label for="pwd">Password</label>
+                <input type="password" formControlName="pwd" class="form-control p-3 rounded-0" id="pwd">
+              </div>
+              <input type="submit" [disabled]="!postForm.valid"
+                class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0" value="Login">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <a href="/signup">Not a part of the community yet? Then, Sign-Up</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,53 @@
+<section class="pb_section bg-light bg-image with-overlay" data-section="attorneys" id="section-attorneys"
+  style="background-image: url(assets/images/1900x1200_img_2.jpg)">
+  <div class="container">
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-lg-7">
+        <p class="text-white">{{post[0]}}</p>
+        <h2 class="mt-0 heading-border-top light font-weight-normal text-white">The books you Borrowed</h2>
+        <p class="text-white">You can borrow upto a maximum of 3 books. And you are welcome to return them on time, and renew them as many times as you please</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <div class="card text-center pb_card_v1 mb-4">
+          <img class="card-img-top rounded-circle w-50 mx-auto" src={{images[0]}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title mt-0 mb-2">{{titles[0]}}</h4>
+            <p><a href={{renew_link[0]}}>{{renew_term[0]}}</a></p>
+            <p><a href={{return_link[0]}}>{{return_term[0]}}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card text-center pb_card_v1 mb-4">
+          <img class="card-img-top rounded-circle w-50 mx-auto" src={{images[1]}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title mt-0 mb-2">{{titles[1]}}</h4>
+            <p><a href={{renew_link[1]}}>{{renew_term[1]}}</a></p>
+            <p><a href={{return_link[1]}}>{{return_term[1]}}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card text-center pb_card_v1 mb-4">
+          <img class="card-img-top rounded-circle w-50 mx-auto" src={{images[2]}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title mt-0 mb-2">{{titles[2]}}</h4>
+            <p><a href={{renew_link[2]}}>{{renew_term[2]}}</a></p>
+            <p><a href={{return_link[2]}}>{{return_term[2]}}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form (ngSubmit)="logOut(postForm.value)" [formGroup]="postForm">
+      <div class="row justify-content-md-center text-center mb-5">
+        <div class="col-md">
+          <input type="submit"
+            class="btn smoothscroll pb_outline-light btn-xl pb_font-13 p-4 rounded-0 pb_letter-spacing-2"
+            value="Logout">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

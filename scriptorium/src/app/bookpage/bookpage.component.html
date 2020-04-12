@@ -1,0 +1,29 @@
+<section class="pb_section pb_section_v1" data-section="about" id="section-about">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-5 pr-md-5 pr-sm-0">
+        <h2 class="mt-0 heading-border-top mb-3 font-weight-normal">{{post[1]}}</h2>
+        <p>By <i>{{post[2]}}</i></p>
+        <p>{{post[5]}}</p>
+        <p>Keywords: {{post[3]}}</p>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="images">
+          <img class="img1 img-fluid" src={{post[4]}}>
+        </div>
+      </div>
+
+      <form (ngSubmit)="borrowBook(postForm.value)" [formGroup]="postForm">
+        <div class="row justify-content-md-center text-center mb-5">
+          <div class="col-md">
+            <input type="submit" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0"
+              value="borrow">
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>

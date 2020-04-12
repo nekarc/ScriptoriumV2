@@ -1,0 +1,75 @@
+<section class="pb_section" data-section="contact" id="section-contact">
+  <div class="container">
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="mt-0 heading-border-top font-weight-normal">Explore</h2>
+        <p>Treasure Trove</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
+        <div class="row">
+          <div class="col-md">
+            <div class="form-group">
+              <label for="name">Title Search</label>
+              <input type="text" (keyup)="onKeyUp($event)" class="form-control p-3 rounded-0" id="name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+        </div>
+        
+      </div>
+      <div class="col-lg-5 pl-md-5 pl-sm-0">
+        <div id="exampleAccordion" class="pb_accordion" data-children=".item">
+          <div class="post" *ngFor="let post of posts">
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#exampleAccordion" href="{{post[7]}}" attr.aria-expanded="false"
+                attr.aria-controls="{{post[6]}}" class="pb_font-18">{{post[1]}}</a>
+              <div id="{{post[6]}}" class="collapse" role="tabpanel">
+                <p>By: <i>{{post[2]}}</i></p>
+                <p><a href="{{post[8]}}" role="button"
+                    class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0">Know More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
+        <div class="row">
+          <div class="col-md">
+            <div class="form-group">
+              <label for="name">Keyword Search</label>
+              <input type="text" (keyup)="onKeyUpKeyword($event)" class="form-control p-3 rounded-0" id="name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+        </div>
+        
+      </div>
+      <div class="col-lg-5 pl-md-5 pl-sm-0">
+        <div id="keyExampleAccordion" class="pb_accordion" data-children=".item">
+          <div class="post" *ngFor="let post of postsKey">
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#keyExampleAccordion" href="{{post[7]}}" attr.aria-expanded="false"
+                attr.aria-controls="{{post[6]}}" class="pb_font-18">{{post[1]}}</a>
+              <div id="{{post[6]}}" class="collapse" role="tabpanel">
+                <p>By: <i>{{post[2]}}</i></p>
+                <p><a href="{{post[8]}}" role="button"
+                    class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0">Know More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>

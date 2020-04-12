@@ -1,0 +1,56 @@
+<section class="pb_section" data-section="contact" id="section-contact">
+  <div class="container">
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="mt-0 heading-border-top font-weight-normal">Contribute</h2>
+        <p>Add a gem to the treasure trove.</p>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
+
+        <form *ngIf="!busy" (ngSubmit)="addBook(postForm.value)" [formGroup]="postForm">
+
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group formcontrol">
+                <label for="title">Title</label>
+                <input type="text" formControlName="title" class="form-control p-3 rounded-0" id="title">
+              </div>
+              <div class="form-group formcontrol">
+                <label for="author">Author</label>
+                <input type="text" formControlName="author" class="form-control p-3 rounded-0" id="author">
+              </div>
+              <div class="form-group formcontrol">
+                <label for="genre">Genre</label>
+                <input type="text" formControlName="genre" class="form-control p-3 rounded-0" id="genre">
+              </div>
+              <div class="form-group formcontrol">
+                <label for="cover">Cover</label>
+                <input type="file" formControlName="cover" class="form-control p-3 rounded-0" id="cover"
+                  (change)="handleInput($event)">
+              </div>
+              <div class="form-group formcontrol">
+                <label for="desc">Description</label>
+                <input type="text" formControlName="desc" class="form-control p-3 rounded-0" id="desc">
+              </div>
+              <input type="submit" [disabled]="!postForm.valid"
+                class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0" value="Add book">
+            </div>
+          </div>
+
+          <div *ngIf="busy" class="form-group processing">
+            <p>Processing Request</p>
+            <div class="loader">Loading...</div>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+    
+  </div>
+</section>

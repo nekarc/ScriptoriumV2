@@ -1,0 +1,56 @@
+<section class="pb_section pb_bg-half" data-section="practicing-areas" id="section-practicing-areas">
+  <div class="container">
+
+
+    <div class="row justify-content-md-center text-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="mt-0 heading-border-top font-weight-normal">Top Recommendations for You</h2>
+        <p>Become a member to have a custom tailored experience.</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="single-item pb_slide_v2">
+
+          <div>
+            <div class="d-lg-flex d-md-block slide_content">
+              <div class="pb_content-media" style="background-image: url({{posts[0][4]}});"></div>
+              <div class="slide_content-text text-center">
+                <h3 class="font-weight-normal mt-0 mb-4">{{posts[0][1]}}</h3>
+                <p>{{posts[0][5]}}</p>
+                <a [routerLink]="['/book', posts[0][0]]">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="d-lg-flex d-md-block slide_content">
+              <div class="pb_content-media" style="background-image: url({{posts[1][4]}});"></div>
+              <div class="slide_content-text text-center">
+                <h3 class="font-weight-normal mt-0 mb-4">{{posts[1][1]}}</h3>
+                <p>{{posts[1][5]}}</p>
+                <a [routerLink]="['/book', posts[1][0]]">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="d-lg-flex d-md-block slide_content">
+              <div class="pb_content-media" style="background-image: url({{posts[2][4]}});"></div>
+              <div class="slide_content-text text-center">
+                <h3 class="font-weight-normal mt-0 mb-4">{{posts[2][1]}}</h3>
+                <p>{{posts[2][5]}}</p>
+                <a [routerLink]="['/book', posts[2][0]]">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
