@@ -1,6 +1,10 @@
 # Scriptorium
 
-Scriptorium is an **online library information system** which allows easy access to books belonging to various genres. It also has a smart recommendation system in place, which suggests books to users based on their borrowing history. Largely, the functionalities implemented include the following
+Scriptorium is an **online library information system** which allows easy access to books belonging to various genres. It also has a smart recommendation system in place, which suggests books to users based on their borrowing history. 
+
+It has an **Angular CLI** frontend, **Flask** backend, and the storage is handled using **MySQL** (InnoDB) and **Firebase**.
+
+Largely, the functionalities implemented include the following.
 1. Without <b>logging in</b>to the website, a user can still <b>view and search all books</b> that are available
 2. Once a user logs in, they can <b>borrow upto three books</b> at a time, for a period of 21 days. There is a provision for them to renew or return the book before this period expires, beyond which they will be charged a nominal fee.
 3. Only a logged-in user can avail the <b>personalised book recommendations </b>feature, else, the latest books added to the library are recommended.
