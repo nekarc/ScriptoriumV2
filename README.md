@@ -8,11 +8,11 @@ Scriptorium is an **online library information system** which allows easy access
 
 
 ## Overview
-The following is a glimpse of the Application (HomePage on top and the Recommendation page below)
-![The Home Page](/images/homepage.jpg)
+The following is a glimpse of the Recommendation page in the Application.
+
 ![The Recommendations Page](/images/reccs.png)
 
-
+## Application Flow
 A schematic diagram portraying the flow of data across the system. If the Diagram is not rendered and looks like plain text/code, then please enable the [Github + Mermaid](https://chrome.google.com/webstore/detail/github-%2B-mermaid/goiiopgdnkogdbjmncgedmgpoajilohe) extension for Chrome.
 ```mermaid
 sequenceDiagram
