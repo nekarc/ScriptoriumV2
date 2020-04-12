@@ -7,15 +7,6 @@ Scriptorium is an **online library information system** which allows easy access
 4. Anyone, irrespective of whether they are a member, can <b>contribute books</b> to the library
 
 
-## Overview
-The following is a glimpse of the Recommendation page in the Application.
-
-![The Recommendations Page](/images/reccs.png)
-
----
-
-
-
 ## Application Flow
 A schematic diagram portraying the flow of data across the system. If the Diagram is not rendered and looks like plain text/code, then please enable the [Github + Mermaid](https://chrome.google.com/webstore/detail/github-%2B-mermaid/goiiopgdnkogdbjmncgedmgpoajilohe) extension for Chrome.
 ```mermaid
@@ -75,3 +66,10 @@ Once all the steps required to deploy the application has been completed, it is 
 
 View the application on the browser at port 4200
 
+
+## Overview
+The following is a glimpse of the Recommendation page in the Application.
+
+![The Recommendations Page](/images/reccs.png)
+
+---
