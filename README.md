@@ -32,7 +32,7 @@ Make sure you have installed all of the following prerequisites on your developm
 * Python3 - [Download & Install Python3](https://python.org), and ensure that it is latest version to avoid any version clashes.
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 * MySQL Server - [Download & Install XAMPP](https://www.apachefriends.org/index.html), and make sure it's running on the default port.
-* Angular CLI - Use the [Angular CLI]([https://angular.io/](https://angular.io/)) to manage your front-end packages. Make sure you've installed Node.js and npm first, then install Angular globally using npm.
+* Angular CLI - Use the [Angular CLI](https://angular.io/) to manage your front-end packages. Make sure you've installed Node.js and npm first, then install Angular globally using npm.
 
 ## Deploy the Application
 
@@ -44,6 +44,7 @@ $ git clone https://github.com/AryaRajivChaloli/lis-scriptorium.git
 ```
 2. Navigate into the folder and create a local python environment
 ```bash
+$ cd lis-scriptorium
 $ pipenv shell
 ```
 3. Install the dependencies in the environment
@@ -59,7 +60,7 @@ $ pip install flask flask-cors flask-mysqldb pyrebase4
 ```bash
 $ flask run
 ```
-7. Run the angular server (on port 4200 by default)
+7. Run the angular server (on port 4200 by default), in the angular app folder
 ```bash
 $ cd scriptorium
 $ ng serve
