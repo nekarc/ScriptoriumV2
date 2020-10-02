@@ -1,6 +1,6 @@
-# Scriptorium
+# ScriptoriumV2
 
-Scriptorium is an **online library information system** which allows easy access to books belonging to various genres. It also has a smart recommendation system in place, which suggests books to users based on their borrowing history. 
+ScriptoriumV2, an upgraded version of the [Scriptorium](https://github.com/AryaRajivChaloli/Scriptorium), is an **online library information system** which allows easy access to books belonging to various genres. It also has a smart recommendation system in place, which suggests books to users based on their borrowing history. 
 
 It has an **Angular CLI** frontend, **Flask** backend, and the storage is handled using **MySQL** (InnoDB) and **Firebase**.
 
