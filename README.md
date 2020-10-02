@@ -40,11 +40,11 @@ Follow these steps systematically to deploy this application on your system:
 
 1. Clone the repository to your local system
 ```bash
-$ git clone https://github.com/AryaRajivChaloli/lis-scriptorium.git
+$ git clone https://github.com/AryaRajivChaloli/ScriptoriumV2.git
 ```
 2. Navigate into the folder and create a local python environment
 ```bash
-$ cd lis-scriptorium
+$ cd ScriptoriumV2
 $ pipenv shell
 ```
 3. Install the dependencies in the environment
